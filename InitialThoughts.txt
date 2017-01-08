@@ -8,3 +8,34 @@ Initial thoughts for the quadcopter:
     - ^^ this looks ideal. Cheap, Controls 4 motors, 600ma, 5v output, 
     
 - 
+
+
+
+
+Programming:
+- Modules:
+    - Motor output
+    - Orientation
+    - Sensors
+    - Web page stream
+    - Tracking, DeadReckoning/GPS
+
+
+- API
+    - Output: Off, On, Orientation, Forward, Back, Left, Right
+    - Input:
+        - Distance sensors
+        - Accelerometers
+        - 
+        
+    - Standard interface for whatevs medium.
+    - Auto off!
+        Or return home.
+        
+        
+        
+ToDo:
+    - LED √
+    - Sonar : Adam
+    - IMU : Jon
+    
