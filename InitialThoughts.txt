@@ -1,0 +1,10 @@
+Initial thoughts for the quadcopter:
+
+- 4 Motors:
+    - mini hubsan motors x4: http://www.robotshop.com/uk/hubsan-fpv-x4-mini-quadcopter-motor-set.html
+    -
+- Motor contoller:
+    - http://www.robotshop.com/uk/600-ma-dual-h-bridge-motor-driver-shieldfor-dc-steppers-l293d.html
+    - ^^ this looks ideal. Cheap, Controls 4 motors, 600ma, 5v output, 
+    
+- 
