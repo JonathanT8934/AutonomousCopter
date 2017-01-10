@@ -1,6 +1,7 @@
+#!/usr/bin/python
 import RPi.GPIO as gpio
 import time
-
+import sys
 
 def sense():
     # Send pulse signal
@@ -45,8 +46,11 @@ print "Waiting for sensor to settle"
 time.sleep(2)
 
 while True:
-    print sense()
-    time.sleep(0.1)
 
-
-gpio.cleanup()
+    try:
+        print sense()
+        time.sleep(0.1)
+    except (KeyboardInterrupt, SystemExit):
+        gpio.cleanup()
+        print "\nExiting"
+        sys.exit(0);
