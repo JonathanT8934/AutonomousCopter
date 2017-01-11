@@ -31,7 +31,7 @@ def sense():
 gpio.setmode(gpio.BCM)
 
 TRIG = 23
-ECHO = 24
+ECHO = 22
 
 print "Distance Measurement in progress"
 

@@ -1,0 +1,15 @@
+How to structure the input from multiple sensors:
+
+Threading and arrays of input:
+
+Multiple arrays, one for each sensor containing results in chronological order.. e.g.:
+
+[30.00, 34.00, 36.04, 38.45]
+[31.32, 35.02, 37.44, 39.43]
+[10.12, 14.21, 16.11, 18.22]
+[60.99, 64.43, 66.14, 68.47]
+
+One thread for each sensor will emit a singla and return result to array continuously.
+
+One thread will then take the next value in array (FIFO) and compute values..
+This should mean we receive synchronised values from all sensors.
