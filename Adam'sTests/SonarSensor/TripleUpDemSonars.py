@@ -8,7 +8,7 @@ TRIG = 23
 ECHO1 = 22
 ECHO2 = 27
 ECHO3 = 17
-SENSOR_PAUSE = 0.1
+SENSOR_PAUSE = 0.5
 
 
 def sense(trig_pin, echo_pin):
@@ -45,7 +45,7 @@ def setup():
     gpio.output(TRIG, False)
     # Pi Input
     gpio.setup(ECHO1, gpio.IN)
-    #gpio.setup(ECHO2, gpio.IN)
+    gpio.setup(ECHO2, gpio.IN)
     gpio.setup(ECHO3, gpio.IN)
 
     print "Waiting for sensors to settle"
@@ -58,11 +58,11 @@ def start():
 
     while True:
         try:
-            #print "ECHO1: " + str(sense(TRIG, ECHO1)) + "   -   ECHO2: " + \
-             #     str(sense(TRIG, ECHO2)) + "  -   ECHO3: " + str(sense(TRIG, ECHO3))
+            print "ECHO1: " + str(sense(TRIG, ECHO1)) + "   -   ECHO2: " + \
+                  str(sense(TRIG, ECHO2)) + "  -   ECHO3: " + str(sense(TRIG, ECHO3))
 
-            print "ECHO1: " + str(sense(TRIG, ECHO1)) + "   -   ECHO3: " + \
-                  str(sense(TRIG, ECHO3))
+            #print "ECHO1: " + str(sense(TRIG, ECHO1)) + "   -   ECHO3: " + \
+             #     str(sense(TRIG, ECHO3))
             time.sleep(SENSOR_PAUSE)
 
         except (KeyboardInterrupt, SystemExit):
