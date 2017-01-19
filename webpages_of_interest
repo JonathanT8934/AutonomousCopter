@@ -1,0 +1,9 @@
+This file is to keep track of any webpages or other sources that may be beneficial in the project. 
+
+1) http://www.livescience.com/40103-accelerometer-vs-gyroscope.html
+   Goes into the comparison of the two. States that using accelerometers for rotation is a bad idea in motion. 
+  
+2) https://learn.sparkfun.com/tutorials/i2c
+   Page on the theory behind the i2c protocol. 
+   
+3)...
