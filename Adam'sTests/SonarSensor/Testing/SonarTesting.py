@@ -14,7 +14,7 @@ SENSOR_PAUSE = 0.01
 
 def sense(trig_pin, echo_pin):
 
-    # Send pulse signal
+    # Send pulse signal"WXAgg"
     gpio.output(trig_pin, True)
     time.sleep(0.1)
     gpio.output(trig_pin, False)
